@@ -1,0 +1,108 @@
+body {
+    background-color: rgb(211, 216, 216);
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.heading {
+    margin: 0;
+    text-align: center;
+    margin: 0px 0;
+}
+
+.subheading {
+    color: black;
+    font-style: initial;
+    text-align: center;
+}
+
+.heading {
+    font-size: 50px;
+}
+
+.subheading {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 10px;
+    transition: transform 0.3s ease-in-out;
+    width: max-content;
+    border: 2px;
+    border-color: black;
+    border-radius: 15px;
+    border-style: solid;
+}
+
+.column:hover {
+    transform: scale(1.04); 
+    border: 1px  black; 
+}
+
+
+
+
+.indann,
+.family,
+.student {
+    background-color: white;
+    padding: 8px 10px;
+    border-radius: 15px;
+    margin: 0px;
+    width:max-content;
+
+}
+
+.indannsub,
+.famsub,
+.studsub {
+    list-style-type: none;
+}
+
+.buybutton1,
+.buybutton2,
+.buybutton3 {
+    background-color: greenyellow;
+    width: 100px;
+    border-radius: 15px;
+    text-align: center;
+}
+.buybutton1 :hover,
+.buybutton2 :hover,
+.buybutton3 :hover{
+ font-weight: bold;
+ background-color: black;
+ color: white;
+ border-radius: 15px;
+ transform: scale(1.01);
+}
+
+.buytext{
+    font-size: 1rem;
+    padding: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        flex-wrap: wrap;
+    }
+}
+
